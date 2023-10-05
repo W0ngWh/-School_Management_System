@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*--NavBar--*/
+.navbar {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar p {
+    padding-top: 10px;
+}
+
+.header {
+    padding-left: 40%;
+}
+/*--NavBar--*/
+
+
+
+/*--Details--*/
+.details {
+    float: left;
+    border: solid 2px;
+    border-radius: 10px;
+    width: 25%;
+    height: auto;
+    padding: 4px;
+    text-align: center;
+    margin-left: 24%;
+    margin-top: 20px;
+}
+
+.fees {
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.fees h4 {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.total {
+    height: 100%;
+}
+
+.total h4 {
+    text-align: center;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 140px;
+    background-color: gray;
+}
+
+.sage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sum1 {
+    padding-right: 15%;
+}
+
+.sum2 {
+    padding-left: 15%;
+}
+/*--Details--*/
+
+
+
+/*--Graph--*/
+.graph {
+    border: solid 2px;
+    border-radius: 10px;
+    margin-right: 24%;
+    margin-top: 20px;
+    float: right;
+    text-align: center;
+    width: 25%;
+    height: auto;
+}
+
+#chart-container {
+    width: auto;
+    height: 180px;
+}
+/*--Graph--*/

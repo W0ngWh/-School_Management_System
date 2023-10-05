@@ -1,0 +1,321 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #7664b7ad;
+    font-family: "Bahnschrift SemiBold";
+}
+
+.navbar {
+    width: auto;
+    height: auto;
+    background: #050505b9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar_left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.navbar_left #nav {
+    font-size: 50px;
+    padding-left: 40px;
+    color: white
+}
+
+.navbar_left #nav:hover {
+    color: #8c82fc;
+}
+
+.navbar_left img {
+    width: 250px;
+    margin-left: 20px;
+}
+
+.navbar_right {
+    float: right;
+    padding-right: 80px;
+}
+
+.navbar_right ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_right li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.navbar_right img {
+    padding: 4px 4%;
+    max-width: 50px;
+    height: 50px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.navbar_right li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* c&p */
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #050505b9;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    backdrop-filter: blur(20px);
+    
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family:'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #8c82fc;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.dropdown-content, .dropdown-content-2 {
+    display: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.dropdown-arrow, .dropdown-arrow-2 {
+    cursor: pointer;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* CHAGESSS */
+.container {
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 30px;
+    display: block;
+}
+
+.right-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 30px;
+    margin-top: 10px;
+}
+
+.events {
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background:#FFFFCC;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    
+}
+
+.sidenav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+    margin-left: 40px;
+}
+
+/* student details */
+.student_details {
+    flex-basis: 47%;
+    position: relative;
+    width: auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 30px;
+}
+
+.student_details .managepost {
+    position: relative;
+    padding: 20px;
+    background: #7fc9e4;
+    padding-bottom: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* timetable content */
+.timetable {
+    position: relative;
+    width: 900px;
+    padding: 10px;
+    display: grid;
+}
+
+.timetable .managepost,.campusnews .managepost {
+    position: relative;
+    display: grid;
+    background: rgb(205, 201, 201);
+    padding: 20px;
+}
+
+.cardheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardheader h2 {
+    font-weight: 600;
+}
+
+thead {
+    font-weight: bold;
+    background-color: #000000;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #454545;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+
+.add a {
+    border: solid 1px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 10px auto;
+    height: 50px;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: greenyellow;
+    color: black;
+}
+
+.add a:hover {
+    background-color: rgb(208, 255, 137);
+}
+
+.logout-button {
+    margin-right: 10px;
+}
+
+.logout-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campusnews {
+    width: 500px; /* Set a fixed width for the campusnews elements */
+    margin-bottom: 20px;
+    background: rgb(205, 201, 201);
+    padding: 20px;
+}
+
+/* Add specific styles for the header within campusnews */
+.campusnews h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+.campusnews .add a:hover {
+    background-color: rgb(208, 255, 137);
+}

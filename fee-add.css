@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url(https://img.freepik.com/premium-vector/seamless-pattern-kawaii-cute-cats-sky-cartoon-animals-background-vector-illustration_107335-245.jpg?w=2000);
+
+
+/* --- Main --- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --body-color: #f2f2f2;
+    --text-color: #000000;
+    --font-size: 28px;
+    --font-colour: #2a293e;
+    --form-bg: #f8f4e5;
+    --form-shadow:#8D7B68;
+}
+
+body{
+    background: url(https://img.freepik.com/premium-vector/seamless-pattern-kawaii-cute-cats-sky-cartoon-animals-background-vector-illustration_107335-245.jpg?w=2000) center center no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+/*--NavBar--*/
+.navbar {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar p {
+    padding-top: 10px;
+}
+
+.navbar .header {
+    padding-left: 40%;
+}
+/*--NavBar--*/
+
+a{
+    display: flex;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* --- Form --- */
+#add-fee, #edit-fees{
+    background-color: #f8f4e5;
+    padding: 50px 100px;
+    border: 3px solid black;
+}
+
+form #s_id, #f_total, #f_pending, #f_paid, #f_pay{
+    display: block;
+    width: 100%;
+    font-size: var(--font-size);
+    line-height: var(--font-size) * 5;
+    margin-bottom: var(--font-size) * 2;
+    border: none;
+    border-bottom: 4px solid rgba(0, 0, 0, 1) ;
+    background: var(--form-bg);
+    min-width: 250px;
+    padding-left: 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 1);
+} 
+
+form #addnew, #edit-fee{
+    display: block;
+    margin: 0 auto;
+    line-height: var(--font-size) * 2;
+    padding: 0 20px;
+    background: var(--form-shadow);
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-size: var(--font-size);
+    color: var(--font-colour);
+}
+
+form span{
+    font-size: var(--font-size);
+    line-height: var(--font-size) * 5;
+    margin-bottom: var(--font-size) * 2;
+    border: none;
+    background: var(--form-bg);
+    padding-left: 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 1);
+}

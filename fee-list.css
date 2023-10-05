@@ -1,0 +1,102 @@
+/* --- Main ---  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #C08261;
+    --main-color: #E2C799;
+    --secondary-color: #8D7B68;
+    --text-color: #000000;
+    --font-size: 28px;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+/* --- Navigation Bar --- */
+.navbar{
+    display: flex;
+    padding: 10px;
+}
+
+.navbar1 a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar1 .header {
+    display: contents;
+}
+
+.navbar1 {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar1 p {
+    padding-top: 10px;
+}
+
+
+/* --- Back to Home Button --- */
+.navbar a{
+    margin-top: 2%;
+    margin-left: 4%;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* --- Edit Button --- */
+.navbar-edit a{
+    display: flex;
+    margin-top: 8%;
+    margin-left: 450px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* --- Fees Title --- */
+.header p{
+    margin-top: 2%;
+    margin-left: 450px;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+
+/* --- Table Header --- */
+table .t-header td{
+    font-size: 36px;
+}
+
+/* --- Table Body --- */
+table{
+    margin: 1%;
+    padding: 2px;
+    border-color: #000000;
+}
+
+td{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #000000;
+}
+

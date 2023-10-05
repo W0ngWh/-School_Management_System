@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Bus Schedule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="create-bs.css"></link>
+    </head>
+    <body>
+        <form name="myForm" id="myForm" oninput="checkForm()" action="create-bs.php" method="post">
+            <h2>Add Bus Schedule</h2><br>
+            <input type="text" name="bus_id" id="bus_id" placeholder="Bus ID" required onblur="checkID()">
+            <br>
+            <input type="text" name="driver" id="driver" placeholder="Bus Driver" required onblur="checkDriver()">
+            <br>
+            <span>Departure Time: </span>
+            <input type="time" name="dtime" id="dtime" placeholder="Departure Time" required>
+            <br>
+            <br>
+            <p>Departure Location:</p>
+            <select name="dlocation" id="dlocation">
+                <option value="Pallas University">Pallas University</option>
+                <option value="LRT Taman Emas">LRT Taman Emas</option>
+                <option value="MRT Taman Bunga">MRT Taman Bunga</option>
+                <option value="Tioman Park">Tioman Park</option>
+            </select>
+            <br>
+            <p>Destination</p>
+            <select name="destination" id="destination">
+                <option value="Pallas University">Pallas University</option>
+                <option value="LRT Taman Emas">LRT Taman Emas</option>
+                <option value="MRT Taman Bunga">MRT Taman Bunga</option>
+                <option value="Tioman Park">Tioman Park</option>
+            </select>
+            <br>
+            <input type="submit" onclick="showData()" id="submit" name="signup_submit" value="Add Bus Schedule" disabled/>
+            <br>
+            <a href="bus.php">View Bus Schedule</a>
+        </form>
+    </body>
+    <script>
+        function checkForm() {
+            var form = document.getElementById("myForm");
+            var submitButton = document.getElementById("submit");
+            if (form.checkValidity()) {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        function showData() {
+            alert("Data Recorded!");
+            window.location.href = "bus.php";
+        }
+
+        function checkID(){
+            var id = document.getElementById('bus_id').value;
+            var regName = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            if (id.length == 0){
+                alert('Please Enter A Bus ID.');
+                return false;
+            }
+            if (regName.test(id)) {
+                alert('Please Enter A Valid Bus ID.');
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkDriver(){
+            var name = document.getElementById('driver').value;
+            var regName = /^[A-Za-z_ ]+$/;
+            if (name.length == 0){
+                alert('Please Enter A Bus Driver Name.');
+                return false;
+            }
+            if (!regName.test(name)) {
+                alert('Please Enter A Valid Bus Driver Name.');
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkLoca(){
+            var location = document.getElementById('dlocation').value;
+            var regName = /^[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]+$/;
+            if (location.length == 0){
+                alert('Please Enter A Location.');
+                return false;
+            }
+            if (regName.test(location)) {
+                alert('Please Enter A Valid Location.');
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+</html>

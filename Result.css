@@ -1,0 +1,279 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+
+
+/*--NavBar--*/
+.navbar {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar p {
+    padding-top: 10px;
+}
+
+.header {
+    padding-left: 40%;
+}
+/*--NavBar--*/
+
+
+
+/*--Result--*/
+.result {
+    float: left;
+    border: solid 2px;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 21%;
+}
+
+.sem {
+    text-align: left;
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.sem p{
+    padding-top: 5px;
+}
+
+.sem p, h3 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dropdown {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.dropdown-content, .dropdown-content-2 {
+    display: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.dropdown-arrow, .dropdown-arrow-2 {
+    cursor: pointer;
+}
+
+.grade {
+    float: right;
+    padding-right: 20px;
+}
+/*--Result--*/
+
+
+
+/*--Bar--*/
+.bar {
+    float: right;
+    border: solid 2px;
+    border-radius: 10px;
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 23%;
+}
+
+.bar h4, p {
+    padding-left: 10px;
+}
+
+#chart-container {
+    padding-left: 10px;
+    width: auto;
+    height: 180px;
+    padding-bottom: 20px;
+}
+
+.below {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.below button {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 35px;
+    font-size: 15px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.below button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+/*--Bar--*/
+
+
+
+/*Marks Details*/
+.marks {
+    border: solid 2px;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 21%;
+    float: left
+}
+
+.marks h3 {
+    text-align: center;
+}
+
+.table {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.table td {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.details {
+    padding-left: 10px;
+}
+
+/*Marks Details*/
+
+
+
+/*Degree Classification*/
+.classification {
+    border: solid 2px;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 21%;
+    float: left;
+}
+/*Degree Classification*/
+
+
+
+/*Survey*/
+#survey-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #333;
+    width: 75%;
+    height: auto;
+}
+  
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form {
+    text-align: center;
+}
+
+.form h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.survey-border {
+    border: solid 2px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    width: 60%;
+    height: auto;
+}
+
+.survey-border h1 {
+    padding-top: 20%
+}
+
+.selected {
+    padding-top: 20%;
+}
+
+.configure {
+    border: solid 2px;
+    border-radius: 10px;
+    float: right;
+    width: 35%;
+    height: auto;
+    text-align: left;
+}
+
+.configure h3 {
+    padding-left: 0;
+    padding-left: 10px;
+}
+
+.selection {
+    border-radius: 10px;
+    border: solid 1px;
+    width: 95%;
+    height: 95%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.survey-content {
+    display: none;
+    text-align: left;
+    padding-left: 10px;
+    border: solid 1px;
+    margin-left: 10px;
+    width: 93%
+}
+
+.survey-content p:hover {
+    background-color: gray;
+}
+
+.survey-arrow {
+    cursor: pointer;
+    text-align: center;
+}
+
+.sike {
+    text-align: center;
+}
+
+.sike h4 {
+    padding-left: 10px;
+}
+/*Survey*/

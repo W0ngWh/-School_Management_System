@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* --- Main ---  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #C08261;
+    --main-color: #E2C799;
+    --secondary-color: #8D7B68;
+    --text-color: #000000;
+    --font-size: 28px;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+/* --- Navigation Bar --- */
+.navbar{
+    display: flex;
+    padding: 10px;
+}
+
+/* --- Back to Home Button --- */
+.navbar a{
+    margin-top: 2%;
+    margin-left: 4%;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* --- Edit Button --- */
+.navbar-edit a{
+    display: flex;
+    margin-top: 8%;
+    margin-left: 450px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.navbar1 a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar1 .header {
+    display: contents;
+}
+
+.navbar1 {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar1 p {
+    padding-top: 10px;
+}
+
+/* --- News Title --- */
+.header p{
+    margin-top: 2%;
+    margin-left: 450px;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+/* --- News Container --- */
+.container{
+    margin-top:2%;
+}
+
+/* --- News Image --- */
+.n-image{
+    display: block;
+    width: 980px;
+    height: 700px;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-left: 2%;
+    background-size: cover;
+}
+
+/* --- News Description --- */
+.n-text{
+    font-size: 24px;
+    display: block;
+    width: 850px;
+    height: 550px;
+    margin-top: 8%;
+    margin-left: 960px;
+    background-color: var(--main-color);
+    outline-color: black;
+    padding-left: 30px;
+    position: absolute;
+}
+
+/* --- News Title --- */
+.n-title{
+    font-size: 36px;
+}
+
+
+/* ----- News List PHP ----- */
+/* --- Add News Button --- */
+.add a {
+    display: flex;
+    margin-left: 92%;
+    margin-top: 2%;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* --- Table Header --- */
+table .t-header td{
+    font-size: 36px;
+}
+
+/* --- Table Body --- */
+table{
+    margin: 1%;
+    padding: 2px;
+    border-color: #000000;
+}
+
+td{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #000000;
+}
+
+

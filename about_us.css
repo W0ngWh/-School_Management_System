@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+/* Flex Container Styles */
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.flex-container > div {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Tab Styles */
+.tab {
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Content Styles */
+.content {
+    height: auto;
+}
+
+.content img {
+    height: auto;
+    width: 500px;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Tab and Content Colors */
+#tab1, #content1 {
+    background-color: rgba(255, 200, 0, 0.442);
+}
+
+#tab2, #content2 {
+    background-color: rgba(255, 171, 76, 0.821);
+}
+
+#tab3, #content3 {
+    background-color: rgba(155, 61, 205, 0.53);
+}
+
+#tab4, #content4 {
+    background-color: rgba(135, 153, 199, 0.771);
+}
+
+/* Hide Content */
+#content2, #content3, #content4 {
+    display: none;
+}
+
+#content1 {
+    display: block;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #263444;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header img {
+    width: 30%;
+    height: auto;
+}
+
+.left-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center the image horizontally and vertically */
+#why-pallas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+/* Style the image */
+#why-pallas img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+#why-pallas .text{
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.text {
+    padding: 20px;
+}
+
+/* video css */
+.video {
+    flex: 1; 
+}
+
+.center-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the video takes full height of the container */
+}
+/* video */
+
+/* topnav for login and contact us */
+.topnav {
+    height: 50px;
+    background-color: #272727c2; /* Background color for the navigation bar */
+    color: #fff; /* Text color */
+    justify-content: right;
+    align-items: center;
+    display: flex;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.topnav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header Typography Styles */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+/* Section Heading Styles */
+section h2 {
+    font-size: 20px;
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Content Styles */
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color:#272727c2;;
+    padding: 10px 0;
+}
+
+/* Footer Typography Styles */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+
+/* slider code */
+#slider-container {
+    position: relative;
+    width: 500px;
+    height: 265px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slider li {
+    width: 100%;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+
+
+/* for contact us page */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}

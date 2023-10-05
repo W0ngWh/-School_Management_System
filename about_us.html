@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="about_us.css">
+    <title>About Pallas University</title>
+</head>
+
+<script src="javascript.js"></script>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>
+            <img src="image/pallas.png" alt="Logo">
+            <h1>Welcome to Pallas University</h1>
+            <p>Where Excellence Meets Education</p>
+        </header>
+
+        <nav class="topnav">
+            <ul>
+                <li><i class="fa-solid fa-user"><a href="loginpage.php"> LOGIN</a></i></li>
+                <li><i class="fa-solid fa-phone-volume"><a href="contactus.html"> CONTACT US</a></i></li>
+            </ul>
+        </nav>
+
+        <div class="flex-container">
+            <div class="tab" id="tab1" onclick="tab(1)">Introduction</div>
+            <div class="tab" id="tab2" onclick="tab(2)">Campus & Facilities</div>
+            <div class="tab" id="tab3" onclick="tab(3)">Our Goals</div>
+            <div class="tab" id="tab4" onclick="tab(4)">Why Pallas?</div>
+        </div>
+
+        <div class="flex-container">
+            <div class="content" id="content1">
+                <section id="introduction">
+                    <div class="content-wrapper">
+                        <div class="text">
+                            <h2>Pallas University: Ignite Curious Minds</h2>
+                            <p>
+                                At Pallas University, we believe that education is the cornerstone of personal and
+                                societal progress. Nestled in the heart of our vibrant community, Pallas stands
+                                as a beacon of knowledge and enlightenment, dedicated to nurturing young minds
+                                and shaping future leaders.
+                            </p>
+                            <br>
+
+                            <h2>Our Commitment to Excellence</h2>
+                            <p>
+                                Founded two years ago, Pallas University has been a steadfast symbol of academic
+                                excellence. Our commitment to providing quality education, fostering creativity,
+                                and instilling core values has been the driving force behind our success.
+                            </p>
+                            <br>
+
+                            <h2>A Diverse Learning Environment</h2>
+                            <p>
+                                Diversity is at the core of our educational philosophy. We embrace students from all
+                                walks of life, creating a rich tapestry of cultures, backgrounds, and perspectives
+                                within our halls. This diversity enriches our learning environment, promoting tolerance,
+                                understanding, and global awareness.
+                            </p>
+                        </div>
+                        <div class="video">
+                            <!-- Center the video -->
+                            <div class="center-video">
+                                <video width="640" height="360" autoplay loop muted>
+                                    <source src="image/school.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content" id="content2">
+                <div class="text">
+                    <section id="faculty">
+                        <div class="left-content">
+                            <img src="image/faculty.jpg" alt="faculty">
+                        </div>
+
+                        <h2>Exceptional Faculty</h2>
+                        <p>
+                            Our dedicated team of educators is the heart of Pallas. With a passion for teaching and
+                            a commitment to continuous learning, they inspire and mentor students to achieve their
+                            highest potential. Our teachers not only impart knowledge but also cultivate critical
+                            thinking, problem-solving skills, and a love for lifelong learning.
+                        </p>
+                        <br>
+                    </section>
+
+                    <!-- Holistic Education Section -->
+                    <section id="holistic-education">
+                        <h2>Holistic Education</h2>
+                        <p>
+                            At Pallas University, we understand that education goes beyond textbooks. We offer a
+                            well-rounded curriculum that encompasses academics, arts, sports, and extracurricular
+                            activities. We encourage students to explore their passions, develop their talents,
+                            and become well-rounded individuals.
+                        </p>
+                        <br>
+                    </section>
+
+                    <!-- Facilities Section -->
+                    <section id="facilities">
+                        <div id="slider-container">
+                            <ul id="slider">
+                                <li><img src="image/class.jpg" alt="Facility 1"></li>
+                                <li><img src="image/gym.jpg" alt="Facility 2"></li>
+                                <li><img src="image/lab.jpg" alt="Facility 3"></li>
+                                <li><img src="image/library.jpg" alt="Facility 4"></li>
+                                <li><img src="image/out.png" alt="Facility 5"></li>
+                            </ul>
+                            <button id="prevBtn" onclick="prevSlide()">&#10094;</button>
+                            <button id="nextBtn" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                        <br>
+                        <h2>State-of-the-Art Facilities</h2>
+                        <p>
+                            Our campus boasts state-of-the-art facilities, including modern classrooms, well-equipped
+                            laboratories, a comprehensive library, and spacious sports grounds. These resources support
+                            our commitment to providing a holistic and immersive educational experience.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="content" id="content3">
+                <div class="text">
+                    <section id="community-engagement">
+
+                        <h2>Community Engagement</h2>
+                        <p>
+                            We believe in giving back to the community that has supported us over the years. Pallas
+                            University actively engages in community service initiatives, fostering a sense of social
+                            responsibility among our students and teaching them the importance of making a positive
+                            impact on the world.
+                        </p>
+                        <br>
+                    </section>
+
+                    <!-- Future Leaders Section -->
+                    <section id="future-leaders">
+                        <h2>Preparing Future Leaders</h2>
+                        <p>
+                            Our ultimate goal is to prepare our students not only for academic success but also to
+                            become responsible, compassionate, and visionary leaders. We instill in them the values of
+                            integrity, empathy, and a commitment to creating a better future for all.
+                        </p>
+
+                        <p>
+                            At Pallas University, every day is an opportunity for growth, learning, and discovery. We
+                            invite you to join us on this educational journey, where we strive for excellence and
+                            inspire
+                            young and curious minds to reach for the stars. Discover the world of possibilities at
+                            Pallas
+                            University, where education knows no bounds.
+                        </p>
+                        <div class="left-content">
+                            <img src="image/graduate.jpg" alt="graduate">
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="content" id="content4">
+                <section id="why-pallas">
+                    <h2>Why "Pallas"?</h2>
+                    <div class="left-content">
+                        <img src="image/pallas.snow.png" alt="snowpallas">
+                        <video width="640" height="360" autoplay loop muted>
+                            <source src="image/Pallas cat - Otocolobus manul.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text">
+                        <p>
+                            The name "Pallas" was chosen for our university with great thought and intention. Just as
+                            the Pallas cat, a small and elusive wild feline known for its keen curiosity, we believe in
+                            nurturing the spirit of curiosity and inquisitiveness in our students. Like the Pallas cat,
+                            known for its perceptive nature and ability to adapt to its environment, we encourage our
+                            students to be adaptable, resilient, and open to exploring new horizons.
+                        </p>
+                        <p>
+                            The Pallas cat, despite its small size, stands as a symbol of tenacity and survival in
+                            challenging conditions. Similarly, we empower our students with the knowledge, skills, and
+                            values to excel not only academically but also in the face of life's challenges. Just as
+                            the Pallas cat's unique qualities make it a remarkable creature of the wild, we celebrate
+                            the uniqueness of each student, nurturing their individual talents and passions.
+                        </p>
+                        <p>
+                            At Pallas University, we believe that curiosity is the key to lifelong learning. We
+                            encourage our students to ask questions, seek answers, and embark on intellectual
+                            adventures.
+                            Our name, "Pallas", serves as a constant reminder of our commitment to fostering a learning
+                            environment that celebrates curiosity, resilience, and the pursuit of excellence.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Pallas University. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slider = document.getElementById("slider");
+        const slides = slider.getElementsByTagName("li");
+
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            slideIndex = index;
+        }
+
+        function nextSlide() {
+            if (slideIndex < slides.length - 1) {
+                slideIndex++;
+            } else {
+                slideIndex = 0; // Reset to the first slide if at the last slide
+            }
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            if (slideIndex > 0) {
+                slideIndex--;
+            } else {
+                slideIndex = slides.length - 1; // Go to the last slide if at the first slide
+            }
+            showSlide(slideIndex);
+        }
+
+        // Automatically advance the slider every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+
+</html>

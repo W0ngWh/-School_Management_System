@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit News</title>
+        <link rel="stylesheet" type="text/css" href="news-edit.css">
+    </head>
+    <body>
+    <div class="edit-form">
+        <form name="edit-news" id="edit-news" action="news-add.php" method="post" enctype="multipart/form-data">
+            <span>News Image:</span>
+            <br>
+            <input type="file" name="n_image" id="n_image" required>
+            <br><br>
+        
+            <span>News Title:</span>
+            <input type="text" name="n_title" id="n_title" required>
+            <br>
+        
+            <span>Description:</span>
+            <textarea name="n_description" id="n_description" required></textarea>
+            <br>
+        
+            <span>Date: </span>
+            <input type="date" name="n_date" id="n_date" placeholder="Date" required>
+            <br><br>
+        
+            <span>Time: </span>
+            <input type="time" name="n_time" id="n_time" placeholder="Time">
+            <br><br>
+        
+            <span>Location:</span>
+            <input type="text" name="n_location" id="n_location">
+            <br>
+        
+            <button type="submit" name="update_news" id="update_news">Add</button>
+        </form>
+        
+    </div>
+    </body>
+</html>

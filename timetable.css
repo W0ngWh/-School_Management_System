@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url(https://img.freepik.com/premium-vector/seamless-pattern-kawaii-cute-cats-sky-cartoon-animals-background-vector-illustration_107335-245.jpg?w=2000);
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== Colours ===== */
+:root{
+    --body-color: #f2f2f2;
+    --nav-color: #8D7B68;
+    --side-nav: #010718;
+    --text-color: #000000;
+    --form-shadow: #F2EAD3;
+}
+
+body{
+    background-color: var(--body-color);
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+}
+
+/*--NavBar--*/
+.navbar {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar p {
+    padding-top: 10px;
+}
+
+.navbar .header {
+    padding-left: 40%;
+}
+/*--NavBar--*/
+
+.timetable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    align-items: center;
+    border: 2px solid #ccc;
+}
+
+.timetable th, .timetable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.timetable th {
+    background-color:grey ; /* Match the navbar background color */
+    color: white;
+}
+
+.timetable tr:nth-child(odd) {
+    background-color: #8c82fc; /* Alternate row background color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myButton {
+    background-color: var(--nav-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    align-items: center;
+}
+
+#myButton:hover {
+    background-color: #6c5446; /* Darker shade for hover effect */
+}
+
+/* Center the container div */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 30px;
+}
+
+

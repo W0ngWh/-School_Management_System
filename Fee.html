@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Course Fee</title>
+    <link rel="stylesheet" href="Fee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!--NavBar-->
+    <div class="navbar">
+        <p><a href="mainpg.php"><i class="fas fa-arrow-left"></i> Back</a></p>
+        <div class="header">
+            <h2>Course Fee</h2>
+        </div>
+    </div>
+    <!--NavBar-->
+
+    <!--Details-->
+    <div class="details">
+        <h3>Details</h3>
+        <div class="fees">
+            <h4>Semester 1 PAYMENT</h4>
+            <hr>
+            <div class="total">
+                <p><b>Due Date</b></p>
+                <h4>Sunday, 1 Jan 2023</h4>
+                <hr style="width: 90%;">
+                <div class="sage">
+                    <div class="sum1">
+                        <p>Amount Payable</p>
+                        <p>RM 1.00</p>
+                        <p>Outstanding</p>
+                        <p>N/A</p>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="sum2">
+                        <p>Total Collected</p>
+                        <p>RM 1.00</p>
+                        <p>Fine</p>
+                        <p>N/A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Details-->
+
+    <!--Graph-->
+    <div class="graph">
+        <h3>Total Summary</h3>
+        <div id="chart-container">
+            <canvas id="bar-chart"></canvas>
+        </div>
+        <hr style="width: 90%;">
+        <div class="total">
+            <div class="sage">
+                <div class="sum1">
+                    <p>Fine</p>
+                    <p>N/A</p>
+                    <p>Paid</p>
+                    <p>RM1.00</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="sum2">
+                    <p>Overdue</p>
+                    <p>N/A</p>
+                    <p>Outstanding</p>
+                    <p>N/A</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Graph-->
+
+    <script>
+        var canvas = document.getElementById("bar-chart");
+
+        var data = {
+            labels: ["Accommodation", "Shuttle Card", "Course Fee", "Others"],
+            datasets: [
+                {
+                    label: "Summary",
+                    data: [10, 20, 30, 40],
+                    backgroundColor: ["darkred", "darkblue", "#8B8000", "purple"], 
+                },
+            ],
+        };
+
+        var barChart = new Chart(canvas, {
+            type: "bar",
+            data: data,
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    },
+                },
+            },
+        });
+    </script>
+</body>
+</html>

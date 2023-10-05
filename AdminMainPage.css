@@ -1,0 +1,244 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgba(3, 68, 28, 0.23);
+    background-position: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: auto;
+    height: auto;
+    background: rgba(18, 55, 42, 0.23);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar_left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.navbar_left #nav {
+    font-size: 50px;
+    padding-left: 40px;
+}
+
+.navbar_left #nav:hover {
+    color: gray;
+}
+
+.navbar_left img {
+    width: 250px;
+    margin-left: 20px;
+}
+
+.navbar_right {
+    float: right;
+    padding-right: 80px;
+}
+
+.navbar_right ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_right li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.navbar_right img {
+    padding: 4px 4%;
+    max-width: 50px;
+    height: 50px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.navbar_right li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* c&p */
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #050505b9;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    backdrop-filter: blur(20px);
+    
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family:'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #8c82fc;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.dropdown-content, .dropdown-content-2 {
+    display: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.dropdown-arrow, .dropdown-arrow-2 {
+    cursor: pointer;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* padding: 20px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* CHAGESSS */
+
+
+/*Nightvare Code*/
+.news {
+    border: solid;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.5);
+    margin-top: 10px;
+    width: 45%;
+    float: left;
+    margin-left: 15%;
+}
+
+.title {
+    text-align: center;
+}
+
+.add a {
+    border: solid 1px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: greenyellow;
+    color: black;
+}
+
+.add a:hover {
+    background-color: rgb(208, 255, 137);
+}
+
+.list {
+    margin-top: 10px;
+    border: solid 1px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: greenyellow;
+}
+
+.list h2 {
+    margin-left: 10px;
+}
+
+.extra {
+    border: solid;
+    float: right;
+    margin-top: 10px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.5);
+    margin-right: 13%;
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.extra h2 {
+    text-decoration: underline;
+}
+
+.extra a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.extra a:hover {
+    color: blue;
+}
+

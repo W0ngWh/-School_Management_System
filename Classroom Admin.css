@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--NavBar--*/
+.navbar {
+    background: rgba(18, 55, 42, 0.23);
+    padding: 4px 4%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+}
+
+.navbar p {
+    padding-top: 10px;
+}
+
+.header {
+    padding-left: 40%;
+}
+/*--NavBar--*/
+
+
+
+/*--Add Classroom--*/
+#add-form {
+    border: 1px solid;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    background: lightpink;
+}
+
+#add-form h2{
+    margin-left: 20px;
+}
+
+#add-classroom-form {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#add-classroom-form label{
+    margin-left: 10px;
+}
+
+.addbutton {
+    background: orange;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer
+}
+
+.addbutton:hover {
+    background: orangered;
+}
+/*--Add Classroom--*/
+
+
+
+/*--Edit Classroom--*/
+.edit-form {
+    border: 1px solid;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    background: lightpink;
+}
+
+#edit-form h2{
+    margin-left: 20px;
+}
+
+#edit-classroom-form {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#edit-classroom-form label{
+    margin-left: 10px;
+}
+
+.addbutton {
+    background: orange;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer
+}
+
+.addbutton:hover {
+    background: orangered;
+}
+
+.close-button {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+/*--Edit Classroom--*/
+
+
+
+#classrooms-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classroom-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+    width: calc(22.22% - 20px);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classroom-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.classroom-item p {
+    margin: 5px 0;
+}
+
+.classroom-item button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.classroom-item button:hover {
+    background-color: lightblue;
+}

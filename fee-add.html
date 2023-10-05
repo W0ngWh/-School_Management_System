@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add New Fees</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+        <link rel="stylesheet" type="text/css" href="fee-add.css">
+    </head>
+    <body>
+    <div class="addfee-form">
+        <form name="add-fee" id="add-fee" action="fee-add.php" method="post" enctype="multipart/form-data">
+            <span>Student ID:</span>
+            <input type="text" name="s_id" id="s_id" required>
+            <br>
+        
+            <span>Total Fees:</span>
+            <input type="number" name="f_total" id="f_total">
+            <br>
+        
+            <button type="submit" name="addnew" id="addnew">Add</button>
+        </form>
+        <br>
+        <a href="fee-list.php">Back to List</a>
+    </div>
+    </body>
+</html>
